@@ -8,8 +8,9 @@ use Illuminate\Http\Request;
 
 class TrainController extends Controller
 {
-    public function index() {
+    public function index()
+    {
 
-        $trains = Train:: //treni in partenza dalla data odierna
+        // $trains = Train:: //treni in partenza dalla data odierna
     }
 }
