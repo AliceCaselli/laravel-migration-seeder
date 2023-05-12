@@ -10,7 +10,9 @@ class TrainController extends Controller
 {
     public function index()
     {
+        $trains = Train::all();
 
-        // $trains = Train:: //treni in partenza dalla data odierna
+        // $trains = Train::where('departure_time', '>=', now())->get();
+        return view('home', compact('trains'));
     }
 }
